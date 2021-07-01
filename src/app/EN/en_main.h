@@ -1,3 +1,9 @@
+/****************************************************************************
+ *   Aug 3 12:17:11 2020
+ *   Copyright  2020  Dirk Brosswick
+ *   Email: dirk.brosswick@googlemail.com
+ ****************************************************************************/
+ 
 /*
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -13,25 +19,11 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  */
-#ifndef _CALENDAR_OVREVIEW_H
-    #define _CALENDAR_OVREVIEW_H
+#ifndef _EN_MAIN_H
+    #define _EN_MAIN_H
 
     #include <TTGO.h>
-    #define CALENDAR_OVREVIEW_INFO_LOG               log_i
-    #define CALENDAR_OVREVIEW_DEBUG_LOG              log_d
-    #define CALENDAR_OVREVIEW_ERROR_LOG              log_e
-    
-    #define CALENDAR_OVREVIEW_HIGHLIGHTED_DAYS       31
 
-    /**
-     * @brief setup calendar overview tile
-     */
-    void calendar_overview_setup();
-    /**
-     * @brief get calendar overview tile number
-     * 
-     * @return  calendar overview tile number
-     */
-    uint32_t calendar_overview_get_tile( void );
+    void en_main_tile_setup( uint32_t tile_num );
 
-#endif // _CALENDAR_OVREVIEW_H
+#endif // _EN_MAIN_H
